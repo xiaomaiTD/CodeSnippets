@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>data</string>
+	<string>xq_data</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
 		<string>All</string>
@@ -23,7 +23,7 @@
 	<key>IDECodeSnippetPlatformFamily</key>
 	<string>iphoneos</string>
 	<key>IDECodeSnippetSummary</key>
-	<string>xq_data</string>
+	<string>数据源</string>
 	<key>IDECodeSnippetTitle</key>
 	<string>数据源</string>
 	<key>IDECodeSnippetUserSnippet</key>
