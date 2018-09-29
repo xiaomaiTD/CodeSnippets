@@ -3,21 +3,22 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>xqBlock</string>
+	<string>Copy</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
 		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>@property (nonatomic,copy) void (^&lt;#callBack#&gt;)(void);</string>
+	<string>/**&lt;#desc#&gt;*/
+@property (nonatomic,copy)NSString * &lt;#name#&gt;;</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>7B65415B-2638-4151-AA06-FDAC2F5B3E22</string>
+	<string>BD30CB89-36CF-4370-AF71-41D48023080B</string>
 	<key>IDECodeSnippetLanguage</key>
-	<string>Xcode.SourceCodeLanguage.Generic</string>
-	<key>IDECodeSnippetPlatformFamily</key>
-	<string>iphoneos</string>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>字符串copy</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>Block</string>
+	<string>Copy</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

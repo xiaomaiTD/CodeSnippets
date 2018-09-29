@@ -3,21 +3,23 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>xqBlock</string>
+	<string>weak_type</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
 		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>@property (nonatomic,copy) void (^&lt;#callBack#&gt;)(void);</string>
+	<string> 
+    __weak typeof(self)weakSelf = self;
+    __strong __typeof(weakSelf)strongSelf = weakSelf;</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>7B65415B-2638-4151-AA06-FDAC2F5B3E22</string>
+	<string>0936476D-8733-4861-B794-E34056E4DB1D</string>
 	<key>IDECodeSnippetLanguage</key>
-	<string>Xcode.SourceCodeLanguage.Generic</string>
-	<key>IDECodeSnippetPlatformFamily</key>
-	<string>iphoneos</string>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>weak_预防block循环引用</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>Block</string>
+	<string>weak_type</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

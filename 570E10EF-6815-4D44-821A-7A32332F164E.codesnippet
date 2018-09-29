@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>vc_viewWill</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>#define kCurrentVC &lt;#currentVCClass#&gt;
+#define kCurrentMainView &lt;#currentMainViewClass#&gt;
+#define kCurretnAction  &lt;#currentActionClass#&gt;
+
+@interface kCurrentVC ()&lt;&lt;#currentMainViewClass#&gt;Delegate&gt;
+
+@property (nonatomic,weak)kCurrentMainView *  &lt;#desc#&gt;MainView;
+
+@property (nonatomic,strong)kCurretnAction * &lt;#desc#&gt;Action;
+
+@end
+
+@implementation kCurrentVC
+
+#pragma mark ---生命周期---
+- (void)viewDidLoad{
+    [super viewDidLoad];
+}
+
+- (void)viewWillAppear:(BOOL)animated{
+    [super viewWillAppear:animated];
+}
+
+- (void)viewWillDisappear:(BOOL)animated{
+    [super viewWillDisappear:animated];
+}
+
+- (void)loadView{
+    kCurrentMainView *  tmpMainView = [kCurrentMainView mainViewWithDelegate:self];
+    self.&lt;#desc#&gt;MainView = tmpMainView;
+    self.view = tmpMainView;
+}
+
+- (kCurretnAction *)&lt;#desc#&gt;Action{
+    kCurretnAction * tmpAction = _&lt;#desc#&gt;Action;
+    if (!tmpAction) {
+        tmpAction = [kCurretnAction start];
+    }
+    return tmpAction;
+}
+- (void)dealloc{
+    NSLog(@"%s",__func__);
+}
+
+@end</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>570E10EF-6815-4D44-821A-7A32332F164E</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>ViewController生命周期</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>ViewController生命周期</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

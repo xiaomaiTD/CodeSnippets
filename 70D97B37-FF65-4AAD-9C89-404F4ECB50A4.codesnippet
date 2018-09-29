@@ -3,21 +3,22 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>xqBlock</string>
+	<string>kWidth-kHeight</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
 		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>@property (nonatomic,copy) void (^&lt;#callBack#&gt;)(void);</string>
+	<string>#define kWidth   [UIScreen mainScreen].bounds.size.width
+#define kHeight  [UIScreen mainScreen].bounds.size.height</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>7B65415B-2638-4151-AA06-FDAC2F5B3E22</string>
+	<string>70D97B37-FF65-4AAD-9C89-404F4ECB50A4</string>
 	<key>IDECodeSnippetLanguage</key>
-	<string>Xcode.SourceCodeLanguage.Generic</string>
-	<key>IDECodeSnippetPlatformFamily</key>
-	<string>iphoneos</string>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>快速获取设备宽高</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>Block</string>
+	<string>kWidth-kHeight</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

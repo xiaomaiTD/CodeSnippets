@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>table_cell</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>NSString * const &lt;#cellname#&gt;ID = @"&lt;#cellName#&gt;";
+#define kCurrentCell   &lt;#cellName#&gt;
+#define kCurrentCellID &lt;#cellName#&gt;ID
+
+
+@interface kCurrentCell()
+
+@end
+
+@implementation kCurrentCell
+
++ (instancetype)cellWithTableView:(UITableView *)tableView{
+    
+    kCurrentCell * cell = [tableView dequeueReusableCellWithIdentifier:kCurrentCellID];
+    if(nil == cell){
+        cell = [[kCurrentCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:kCurrentCellID];
+    }
+    return cell;
+}
+
+- (instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(nullable NSString *)reuseIdentifier{
+    self = [super initWithStyle:style reuseIdentifier:reuseIdentifier];
+    if(self){
+        [self setupSubViews];
+        self.selectionStyle = UITableViewCellSelectionStyleNone;
+    }
+    return self;
+}
+
+- (void)setupSubViews{
+    
+}
+
+- (void)updateConstraints{
+    [super updateConstraints];
+}
+
+@end</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>84878B2A-EC16-4B8A-B9AF-539EC5B36FAE</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>tableView_自定义cell</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>tableView_自定义cell</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>
