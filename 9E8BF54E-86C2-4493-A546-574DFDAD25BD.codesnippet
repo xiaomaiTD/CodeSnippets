@@ -3,25 +3,27 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>xq_weak</string>
+	<string>xq_strong</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
 		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
 	<string>/** &lt;#property desc#&gt; */
-@property (nonatomic,weak)&lt;#type#&gt; *  &lt;#name#&gt;;</string>
+@property (nonatomic,strong)&lt;#type#&gt; *  &lt;#name#&gt;;</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>9FE0A165-5A3A-497E-9B3E-8D53D1F68BA9</string>
+	<string>9E8BF54E-86C2-4493-A546-574DFDAD25BD</string>
 	<key>IDECodeSnippetLanguage</key>
-	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<string>Xcode.SourceCodeLanguage.Generic</string>
+	<key>IDECodeSnippetPlatformFamily</key>
+	<string>iphoneos</string>
 	<key>IDECodeSnippetSummary</key>
-	<string>weak属性</string>
+	<string>strong属性</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>weak属性</string>
+	<string>strong属性</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>
-	<integer>2</integer>
+	<integer>0</integer>
 </dict>
 </plist>
